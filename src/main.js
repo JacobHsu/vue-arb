@@ -23,8 +23,11 @@ const defaultLang = userLang.indexOf('en') === -1 ? 'zh-CN' : 'en-US'
 const lang = localStorage.getItem('lang')
 
 if (!lang) {
+  store.dispatch('changeLang', defaultLang)
   localStorage.setItem('lang', defaultLang)
-} 
+} else {
+  store.dispatch('changeLang', lang)
+}
 
 new Vue({
   router,

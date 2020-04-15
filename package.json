@@ -11,7 +11,11 @@
     "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "core-js": "^3.6.5",
+    "node-sass": "^4.13.1",
+    "reduxsauce": "^1.1.2",
+    "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vue-i18n": "^8.17.0",
     "vue-router": "^3.1.6",
